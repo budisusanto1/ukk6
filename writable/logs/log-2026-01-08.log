@@ -1,0 +1,219 @@
+CRITICAL - 2026-01-08 03:12:39 --> ErrorException: Undefined variable $rombl
+[Method: GET, Route: formdata]
+in APPPATH\Views\inputdatas.php on line 240.
+ 1 APPPATH\Views\inputdatas.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rombl', 'C:\\Users\\User\\Downloads\\ekskulikuler\\app\\Views\\inputdatas.php', 240)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\User\\Downloads\\ekskulikuler\\app\\Views\\inputdatas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('inputdatas', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('inputdatas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formdatas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')
+CRITICAL - 2026-01-08 03:12:48 --> ErrorException: Undefined variable $rombl
+[Method: GET, Route: formdata]
+in APPPATH\Views\inputdatas.php on line 240.
+ 1 APPPATH\Views\inputdatas.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rombl', 'C:\\Users\\User\\Downloads\\ekskulikuler\\app\\Views\\inputdatas.php', 240)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\User\\Downloads\\ekskulikuler\\app\\Views\\inputdatas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('inputdatas', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('inputdatas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formdatas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')
+CRITICAL - 2026-01-08 03:13:02 --> ErrorException: Undefined property: stdClass::$jenis_kelamin
+[Method: GET, Route: formdata]
+in APPPATH\Views\inputdatas.php on line 241.
+ 1 APPPATH\Views\inputdatas.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jenis_kelamin', 'C:\\Users\\User\\Downloads\\ekskulikuler\\app\\Views\\inputdatas.php', 241)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\User\\Downloads\\ekskulikuler\\app\\Views\\inputdatas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('inputdatas', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('inputdatas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formdatas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')
+ERROR - 2026-01-08 03:18:53 --> mysqli_sql_exception: Unknown column 'tempat_lahir' in 'field list' in C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `si...', 0)
+#1 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `si...')
+#2 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `si...')
+#3 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `si...', Array, false)
+#4 C:\Users\User\Downloads\ekskulikuler\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\User\Downloads\ekskulikuler\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\User\Downloads\ekskulikuler\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\User\Downloads\ekskulikuler\app\Controllers\Siswa.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(933): App\Controllers\Siswa->input()
+#9 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#10 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\User\Downloads\ekskulikuler\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\User\Downloads\ekskulikuler\system\rewrite.php(44): require_once('C:\\Users\\User\\D...')
+#15 {main}
+CRITICAL - 2026-01-08 03:18:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tempat_lahir' in 'field list'
+[Method: POST, Route: inputsiswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (:nis:, :nama_siswa:, :id_rombel:, :no_hp:, :alamat:, :jenis_kelamin:, :tempat_lahir:, :tanggal_lahir:, :id_user:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Siswa.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->input()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')
+CRITICAL - 2026-01-08 03:18:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tempat_lahir' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (\'13131\', \'chel\', \'3\', \'07565768\', \'dada\', \'Perempuan\', \'btm\', \'2026-01-14\', 40)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (\'13131\', \'chel\', \'3\', \'07565768\', \'dada\', \'Perempuan\', \'btm\', \'2026-01-14\', 40)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (:nis:, :nama_siswa:, :id_rombel:, :no_hp:, :alamat:, :jenis_kelamin:, :tempat_lahir:, :tanggal_lahir:, :id_user:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Siswa.php(42): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->input()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')
+CRITICAL - 2026-01-08 03:18:53 --> [Caused by] mysqli_sql_exception: Unknown column 'tempat_lahir' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (\'13131\', \'chel\', \'3\', \'07565768\', \'dada\', \'Perempuan\', \'btm\', \'2026-01-14\', 40)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (\'13131\', \'chel\', \'3\', \'07565768\', \'dada\', \'Perempuan\', \'btm\', \'2026-01-14\', 40)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (\'13131\', \'chel\', \'3\', \'07565768\', \'dada\', \'Perempuan\', \'btm\', \'2026-01-14\', 40)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `siswa` (`nis`, `nama_siswa`, `id_rombel`, `no_hp`, `alamat`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `id_user`) VALUES (:nis:, :nama_siswa:, :id_rombel:, :no_hp:, :alamat:, :jenis_kelamin:, :tempat_lahir:, :tanggal_lahir:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Siswa.php(42): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->input()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')
+ERROR - 2026-01-08 05:19:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ekstrakulikuler', 3306, '', 0)
+#1 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Downloads\ekskulikuler\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Downloads\ekskulikuler\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\User\Downloads\ekskulikuler\app\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+#7 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+#8 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Downloads\ekskulikuler\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Downloads\ekskulikuler\system\rewrite.php(44): require_once('C:\\Users\\User\\D...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\User\Downloads\ekskulikuler\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\User\Downloads\ekskulikuler\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\User\Downloads\ekskulikuler\app\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+#6 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+#7 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Downloads\ekskulikuler\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Downloads\ekskulikuler\system\rewrite.php(44): require_once('C:\\Users\\User\\D...')
+#13 {main}
+CRITICAL - 2026-01-08 05:19:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')
+ERROR - 2026-01-08 05:20:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ekstrakulikuler', 3306, '', 0)
+#1 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Downloads\ekskulikuler\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Downloads\ekskulikuler\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\User\Downloads\ekskulikuler\app\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+#7 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+#8 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Downloads\ekskulikuler\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Downloads\ekskulikuler\system\rewrite.php(44): require_once('C:\\Users\\User\\D...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\Downloads\ekskulikuler\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Downloads\ekskulikuler\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\User\Downloads\ekskulikuler\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\User\Downloads\ekskulikuler\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\User\Downloads\ekskulikuler\app\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+#6 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+#7 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\User\Downloads\ekskulikuler\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Downloads\ekskulikuler\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Downloads\ekskulikuler\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Downloads\ekskulikuler\system\rewrite.php(44): require_once('C:\\Users\\User\\D...')
+#13 {main}
+CRITICAL - 2026-01-08 05:20:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Downloads\\ekskulikuler\\public\\index.php')

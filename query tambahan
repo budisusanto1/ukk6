@@ -1,0 +1,30 @@
+CREATE TABLE nilai_ekskul (
+    id_nilai INT AUTO_INCREMENT PRIMARY KEY,
+    id_daftar INT NOT NULL,
+    nilai DECIMAL(5,2),
+    predikat CHAR(2),
+    catatan TEXT,
+    UNIQUE KEY unik_nilai (id_daftar)
+);
+CREATE TABLE absensi_ekskul (
+    id_absen INT AUTO_INCREMENT PRIMARY KEY,
+    id_daftar INT NOT NULL,
+    tanggal DATE NOT NULL,
+    keterangan ENUM('Hadir','Izin','Alpha') NOT NULL,
+    UNIQUE KEY unik_absen (id_daftar, tanggal)
+);
+CREATE TABLE pendaftaran_ekskul (
+    id_daftar INT AUTO_INCREMENT PRIMARY KEY,
+    id_siswa INT NOT NULL,
+    id_ekskul INT NOT NULL,
+    tanggal_daftar DATE NOT NULL,
+    status ENUM('pending','disetujui','ditolak') DEFAULT 'pending',
+    UNIQUE KEY unik_siswa_ekskul (id_siswa, id_ekskul)
+);
+CREATE TABLE jadwal_ekskul (
+    id_jadwal INT AUTO_INCREMENT PRIMARY KEY,
+    id_ekskul INT NOT NULL,
+    hari ENUM('Senin','Selasa','Rabu','Kamis','Jumat') NOT NULL,
+    jam_mulai TIME NOT NULL,
+    jam_selesai TIME NOT NULL
+);
